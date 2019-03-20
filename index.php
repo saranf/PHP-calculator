@@ -1,6 +1,6 @@
 <?php
 
-	var_dump($_GET);
+	//var_dump($_GET);
 
 echo $_GET["AC"];
 echo $_GET["="];
@@ -18,4 +18,7 @@ echo $_GET["3"];
 echo $_GET["2"];
 echo $_GET["1"];
 
+
+header('location:'.$_SERVER['HTTP_REFERER']);
+// 페이지 이동
 ?>
