@@ -50,19 +50,19 @@
   </style>
   <body>
 
-	  <form  method = "post" action="test_index.php" >
+	  <form  method = "post" action="index_session.php" >
 	  <div class="jumbotron"><h1 class="display-4">
 	  <?php echo $_SESSION['test'];?> </h1></div>
 	  <div class="btn-group-wrapper">
       <div class="btn-group" role="group" aria-label="Basic example">
-        <button type="submit" class="btn btn-secondary opt-btn" name="AC" ㅑvalue="AC">AC</button>
+        <button type="submit" class="btn btn-secondary opt-btn" name="AC" value="AC">AC</button>
         <button type="submit" class="btn btn-secondary opt-btn" name="plus" value="+">+/-</button>
         <button type="submit" class="btn btn-secondary opt-btn" name="parsent" >%</button>
         <button type="submit" class="btn btn-secondary opt-btn" name="nano">/</button>
       </div>
       <div class="btn-group" role="group" aria-label="Basic example">
         <button type="submit" class="btn btn-secondary" name="7" value=7>7</button>
-        <button type="submit" class="btn btn-secondary" name="8">8</button>
+        <button type="submit" class="btn btn-secondary" name="8" >8</button>
         <button type="submit" class="btn btn-secondary" name="9">9</button>
         <button type="submit" class="btn btn-secondary opt-btn" name="10">*</button>
       </div>
