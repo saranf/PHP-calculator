@@ -1,8 +1,8 @@
 <?php
 session_start();
-$test = $_POST['7'];
+$number = $_POST['7'];
 
-$_SESSION['test']=$test;
+$_SESSION['number']=$number;
 
 header('location:./index.php');
 ?>
