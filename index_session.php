@@ -1,6 +1,7 @@
 <?php
 session_start();
-$number = $_POST['7'];
+$number = $_POST['number'];
+
 
 $_SESSION['number']=$number;
 

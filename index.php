@@ -61,9 +61,9 @@
         <button type="submit" class="btn btn-secondary opt-btn" name="nano">/</button>
       </div>
       <div class="btn-group" role="group" aria-label="Basic example">
-        <button type="submit" class="btn btn-secondary" name="7" value=7>7</button>
-        <button type="submit" class="btn btn-secondary" name="8" value=8 >8</button>
-        <button type="submit" class="btn btn-secondary" name="9" value=9>9</button>
+        <button type="submit" class="btn btn-secondary" name="number[]" value=7>7</button>
+        <button type="submit" class="btn btn-secondary" name="number[]" value=8 >8</button>
+        <button type="submit" class="btn btn-secondary" name="number[]" value=9>9</button>
         <button type="submit" class="btn btn-secondary opt-btn" name="*" value=*>*</button>
       </div>
       <div class="btn-group" role="group" aria-label="Basic example">
