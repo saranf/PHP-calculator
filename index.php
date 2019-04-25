@@ -52,34 +52,34 @@
 
 	  <form  method = "post" action="index_session.php" >
 	  <div class="jumbotron"><h1 class="display-4">
-	  <?php echo $_SESSION['number'];?> </h1></div>
+	  <?php echo "".$_SESSION['number']."".$_SESSION['AO']."".$_SESSION['number1']; ?> </h1></div>
 	  <div class="btn-group-wrapper">
       <div class="btn-group" role="group" aria-label="Basic example">
         <button type="submit" class="btn btn-secondary opt-btn" name="AC" value="AC">AC</button>
         <button type="submit" class="btn btn-secondary opt-btn" name="plus" value="+">+/-</button>
         <button type="submit" class="btn btn-secondary opt-btn" name="parsent" >%</button>
-        <button type="submit" class="btn btn-secondary opt-btn" name="nano">/</button>
+        <button type="submit" class="btn btn-secondary opt-btn" name="AO[]" value="/">/</button>
       </div>
       <div class="btn-group" role="group" aria-label="Basic example">
-        <button type="submit" class="btn btn-secondary" name="number[]" value=7>7</button>
-        <button type="submit" class="btn btn-secondary" name="number[]" value=8 >8</button>
-        <button type="submit" class="btn btn-secondary" name="number[]" value=9>9</button>
-        <button type="submit" class="btn btn-secondary opt-btn" name="*" value=*>*</button>
+        <button type="submit" class="btn btn-secondary" name="seven" value=7>7</button>
+        <button type="submit" class="btn btn-secondary" name="eight" value=8 >8</button>
+        <button type="submit" class="btn btn-secondary" name="nine" value=9>9</button>
+        <button type="submit" class="btn btn-secondary opt-btn" name="AO[]" value="*">*</button>
       </div>
       <div class="btn-group" role="group" aria-label="Basic example">
-        <button type="submit" class="btn btn-secondary"name="number[]" value=4>4</button>
-        <button type="submit" class="btn btn-secondary"name="number[]" value=5>5</button>
-        <button type="submit" class="btn btn-secondary"name="number[]" value=6>6</button>
-        <button type="submit" class="btn btn-secondary opt-btn"name="-" value=->-</button>
+        <button type="submit" class="btn btn-secondary"name="four" value=4>4</button>
+        <button type="submit" class="btn btn-secondary"name="five" value=5>5</button>
+        <button type="submit" class="btn btn-secondary"name="six" value=6>6</button>
+        <button type="submit" class="btn btn-secondary opt-btn" name="AO[]" value="-">-</button>
       </div>
       <div class="btn-group" role="group" aria-label="Basic example">
-        <button type="submit" class="btn btn-secondary"name="number[]" value=1>1</button>
-        <button type="submit" class="btn btn-secondary"name="number[]" value=2>2</button>
-        <button type="submit" class="btn btn-secondary"name="number[]" value=3>3</button>
-        <button type="submit" class="btn btn-secondary opt-btn"name="+" value=+>+</button>
+        <button type="submit" class="btn btn-secondary"name="one" value=1>1</button>
+        <button type="submit" class="btn btn-secondary"name="two" value=2>2</button>
+        <button type="submit" class="btn btn-secondary"name="three" value=3>3</button>
+        <button type="submit" class="btn btn-secondary opt-btn"name="AO[]" value=+>+</button>
       </div>
       <div class="btn-group" role="group" aria-label="Basic example">
-        <button type="submit" class="btn btn-secondary zero-btn"name="number[]" value=0>0</button>
+        <button type="submit" class="btn btn-secondary zero-btn"name="zero" value=0>0</button>
         <button type="submit" class="btn btn-secondary"name="." value=.>.</button>
         <button type="submit" class="btn btn-secondary opt-btn"name="=" value==>=</button>
       </div>

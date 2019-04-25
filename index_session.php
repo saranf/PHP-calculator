@@ -1,9 +1,13 @@
 <?php
 session_start();
-$number = $_POST['number'][0];
 
 
-$_SESSION['number']=$number;
+$_SESSION['number']=$seven+$eight+$nine;
+
+
+if($_POST['AC']=="AC")
+	session_unset();
 
 header('location:./index.php');
+
 ?>
