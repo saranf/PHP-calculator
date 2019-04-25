@@ -2,7 +2,7 @@
 session_start();
 
 
-$_SESSION['number']=$seven+$eight+$nine;
+$_SESSION['number']=$seven;
 
 
 if($_POST['AC']=="AC")
