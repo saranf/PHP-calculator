@@ -1,8 +1,11 @@
 <?php
 session_start();
 
-if($_SESSION['number']!=null)
-	$_SESSION['number']=$_SESSION['number']."".$_POST['eight'];
+if (empty($_SESSION['number']))
+	$_SESSION['number']=$_POST['four'];
+
+else
+	$_SESSION['number']=$_SESSION['number']."".$_POST['five'];
 
 
 if($_POST['AC']=="AC")
