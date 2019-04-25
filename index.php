@@ -61,25 +61,25 @@
         <button type="submit" class="btn btn-secondary opt-btn" name="AO[]" value="/">/</button>
       </div>
       <div class="btn-group" role="group" aria-label="Basic example">
-        <button type="submit" class="btn btn-secondary" name="seven" value=7>7</button>
-        <button type="submit" class="btn btn-secondary" name="eight" value=8 >8</button>
-        <button type="submit" class="btn btn-secondary" name="nine" value=9>9</button>
+        <button type="submit" class="btn btn-secondary" name="7" value=7>7</button>
+        <button type="submit" class="btn btn-secondary" name="8" value=8 >8</button>
+        <button type="submit" class="btn btn-secondary" name="9" value=9>9</button>
         <button type="submit" class="btn btn-secondary opt-btn" name="AO[]" value="*">*</button>
       </div>
       <div class="btn-group" role="group" aria-label="Basic example">
-        <button type="submit" class="btn btn-secondary"name="four" value=4>4</button>
-        <button type="submit" class="btn btn-secondary"name="five" value=5>5</button>
-        <button type="submit" class="btn btn-secondary"name="six" value=6>6</button>
+        <button type="submit" class="btn btn-secondary"name="4" value=4>4</button>
+        <button type="submit" class="btn btn-secondary"name="5" value=5>5</button>
+        <button type="submit" class="btn btn-secondary"name="6" value=6>6</button>
         <button type="submit" class="btn btn-secondary opt-btn" name="AO[]" value="-">-</button>
       </div>
       <div class="btn-group" role="group" aria-label="Basic example">
-        <button type="submit" class="btn btn-secondary"name="one" value=1>1</button>
-        <button type="submit" class="btn btn-secondary"name="two" value=2>2</button>
-        <button type="submit" class="btn btn-secondary"name="three" value=3>3</button>
+        <button type="submit" class="btn btn-secondary"name="1" value=1>1</button>
+        <button type="submit" class="btn btn-secondary"name="2" value=2>2</button>
+        <button type="submit" class="btn btn-secondary"name="3" value=3>3</button>
         <button type="submit" class="btn btn-secondary opt-btn"name="AO[]" value=+>+</button>
       </div>
       <div class="btn-group" role="group" aria-label="Basic example">
-        <button type="submit" class="btn btn-secondary zero-btn"name="zero" value=0>0</button>
+        <button type="submit" class="btn btn-secondary zero-btn"name="0" value=0>0</button>
         <button type="submit" class="btn btn-secondary"name="." value=.>.</button>
         <button type="submit" class="btn btn-secondary opt-btn"name="=" value==>=</button>
       </div>
