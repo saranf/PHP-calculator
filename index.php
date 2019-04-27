@@ -56,7 +56,7 @@
 	  <div class="btn-group-wrapper">
       <div class="btn-group" role="group" aria-label="Basic example">
         <button type="submit" class="btn btn-secondary opt-btn" name="AC" value="AC">AC</button>
-        <button type="submit" class="btn btn-secondary opt-btn" name="plus" value="+">+/-</button>
+        <button type="submit" class="btn btn-secondary opt-btn" name="eraser" value="eraser">◀ </button>
         <button type="submit" class="btn btn-secondary opt-btn" name="parsent" >%</button>
         <button type="submit" class="btn btn-secondary opt-btn" name="/" value="/">/</button>
       </div>
