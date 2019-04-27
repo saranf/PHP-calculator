@@ -73,9 +73,9 @@
         <button type="submit" class="btn btn-secondary opt-btn" name="-" value="-">-</button>
       </div>
       <div class="btn-group" role="group" aria-label="Basic example">
-        <button type="submit" class="btn btn-secondary"name="1" value=1>1</button>
-        <button type="submit" class="btn btn-secondary"name="2" value=2>2</button>
-        <button type="submit" class="btn btn-secondary"name="3" value=3>3</button>
+        <button type="submit" class="btn btn-secondary"name="number[]" value=1>1</button>
+        <button type="submit" class="btn btn-secondary"name="number[]" value=2>2</button>
+        <button type="submit" class="btn btn-secondary"name="number[]" value=3>3</button>
         <button type="submit" class="btn btn-secondary opt-btn"name="+" value=+>+</button>
       </div>
       <div class="btn-group" role="group" aria-label="Basic example">
