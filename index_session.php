@@ -6,8 +6,8 @@ error_log(count($test),0);
 if (isset($_SESSION['number'])){
 
 	if($_SESSION['number']==0){
-		error_log("if test",0);
-		header('location:./index.php');
+		unset($_SESSION['number']);
+		$_SESSION['number']=$_POST['number'][0];
 	}
 	else{
 		$_SESSION['number']= $_SESSION['number']."".$_POST['number'][0];
