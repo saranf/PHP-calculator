@@ -52,7 +52,7 @@
 
 	  <form  method = "post" action="index_session.php" >
 	  <div class="jumbotron"><h1 class="display-4">
-	  <?php echo $_SESSION['number'];?> </h1></div>
+	  <?php echo $_SESSION['number']."".$_SESSION['plus'];?> </h1></div>
 	  <div class="btn-group-wrapper">
       <div class="btn-group" role="group" aria-label="Basic example">
         <button type="submit" class="btn btn-secondary opt-btn" name="AC" value="AC">AC</button>
@@ -76,12 +76,12 @@
         <button type="submit" class="btn btn-secondary"name="number[]" value=1>1</button>
         <button type="submit" class="btn btn-secondary"name="number[]" value=2>2</button>
         <button type="submit" class="btn btn-secondary"name="number[]" value=3>3</button>
-        <button type="submit" class="btn btn-secondary opt-btn"name="+" value=+>+</button>
+        <button type="submit" class="btn btn-secondary opt-btn"name="+" value='+'>+</button>
       </div>
       <div class="btn-group" role="group" aria-label="Basic example">
         <button type="submit" class="btn btn-secondary zero-btn"name="number[]" value=0>0</button>
         <button type="submit" class="btn btn-secondary"name="." value=.>.</button>
-        <button type="submit" class="btn btn-secondary opt-btn"name="=" value==>=</button>
+        <button type="submit" class="btn btn-secondary opt-btn"name="=" value='='>=</button>
       </div>
     </div>
    </form>
