@@ -38,6 +38,8 @@ if($_POST['eraser']=="eraser"){
 	//error_log($session_decode,0);
 }
 if ($_POST['+']=='+'){
+
+	$_SESSION['sign'] ='+';
 	$_SESSION['is_opt']==$_POST['+'];
 
 	$_SESSION['is_opt'] = TRUE;
@@ -45,8 +47,25 @@ if ($_POST['+']=='+'){
 	$session_number = $_SESSION['old_number'] =  $_POST['number'];
 }
 
+if ($_POST['-']=='-'){
+
+	$_SESSION['sign'] = '-';
+	$_SESSION['is_opt']==$_POST['-'];
+
+	$_SESSION['is_opt'] = TRUE;
+
+	$session_number = $_SESSION['old_number'] =  $_POST['number'];
+}
+
+
 if( $_POST["="] == '='){
-	$_SESSION['number'] = $_SESSION['old_number'] + $_SESSION['number'];
+
+	if($_SESSION['sign'] =='+'){
+		$_SESSION['number'] = $_SESSION['old_number'] + $_SESSION['number'];
+	}
+	if($_SESSION['sign'] == '-'){
+		$_SESSION['number'] = $_SESSION['old_number'] - $_SESSION['number'];
+	}
 }
 
 
