@@ -87,6 +87,17 @@ if ($_POST['*']=='*'){
 	$session_number = $_SESSION['old_number'] =  $_POST['number'];
 }
 
+if ($_POST['/']=='/'){
+
+	$_SESSION['sign'] = '/';
+	$_SESSION['is_opt']==$_POST['/'];
+
+	$_SESSION['is_opt'] = TRUE;
+
+	$session_number = $_SESSION['old_number'] =  $_POST['number'];
+}
+
+
 if( $_POST["="] == '='){
 
 	if($_SESSION['sign'] =='+'){
@@ -97,6 +108,9 @@ if( $_POST["="] == '='){
 	}
 	if($_SESSION['sign'] == '*'){
 		$_SESSION['number'] = $_SESSION['old_number'] * $_SESSION['number'];
+	}
+	if($_SESSION['sign'] == '/'){
+		$_SESSION['number'] = $_SESSION['old_number'] / $_SESSION['number'];
 	}
 }
 
