@@ -5,6 +5,10 @@ $session_number=0;
 
 
 if (isset($_SESSION['number'])){
+	if($_SESSION['equal']){
+		$_SESSION['equal'] = FALSE;
+		$_SESSION['number'] = '';
+	}
 	if($_SESSION['is_opt']){
 		$_SESSION['is_opt'] = FALSE;
 		$_SESSION['old_number'] = $_SESSION['number'];
@@ -101,15 +105,19 @@ if ($_POST['/']=='/'){
 if( $_POST["="] == '='){
 
 	if($_SESSION['sign'] =='+'){
+		$_SESSION['equal'] = TRUE;
 		$_SESSION['number'] = $_SESSION['old_number'] + $_SESSION['number'];
 	}
 	if($_SESSION['sign'] == '-'){
+		$_SESSION['equal'] = TRUE;
 		$_SESSION['number'] = $_SESSION['old_number'] - $_SESSION['number'];
 	}
 	if($_SESSION['sign'] == '*'){
+		$_SESSION['equal'] = TRUE;
 		$_SESSION['number'] = $_SESSION['old_number'] * $_SESSION['number'];
 	}
 	if($_SESSION['sign'] == '/'){
+		$_SESSION['equal'] = TRUE;
 		$_SESSION['number'] = $_SESSION['old_number'] / $_SESSION['number'];
 	}
 }
