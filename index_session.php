@@ -8,14 +8,16 @@ if (isset($_SESSION['number'])){
 	if($_SESSION['equal']){
 		$_SESSION['equal'] = FALSE;
 		$_SESSION['number'] = '';
+		$_SESSION['new_number'] = '';
+
 	}
 	if($_SESSION['is_opt']){
 		$_SESSION['is_opt'] = FALSE;
 		$_SESSION['old_number'] = $_SESSION['number'];
+
 		$_SESSION['number'] = '';
 	}
 	if(strlen($_SESSION['number']) < 5){
-		//error_log("test",0);
 		if($_SESSION['number']==0){
 			unset($_SESSION['number']);
 			$_SESSION['number']=$_POST['number'][0];
@@ -31,8 +33,6 @@ if (isset($_SESSION['number'])){
 
 else{
 	$_SESSION['number']= $_POST['number'][0];
-
-		
 }
 
 if($_POST['eraser']=="eraser"){
@@ -41,63 +41,51 @@ if($_POST['eraser']=="eraser"){
 
 	//error_log($session_decode,0);
 }
+
 if ($_POST['+']=='+'){
 
+	if($_SESSION['is_opt']==FALSE){
+		$_SESSION['number'] = $_SESSION['old_number'] + $_SESSION['number'];
+	}
 	$_SESSION['sign'] ='+';
-	$_SESSION['is_opt']==$_POST['+'];
-
 	$_SESSION['is_opt'] = TRUE;
-
 	$session_number = $_SESSION['old_number'] =  $_POST['number'];
+
+
 }
+
 
 if ($_POST['-']=='-'){
 
+	if($_SESSION['is_opt']==FALSE){
+		$_SESSION['number'] = $_SESSION['old_number'] - $_SESSION['number'];
+	}
+
 	$_SESSION['sign'] = '-';
-	$_SESSION['is_opt']==$_POST['-'];
-
 	$_SESSION['is_opt'] = TRUE;
-
 	$session_number = $_SESSION['old_number'] =  $_POST['number'];
 }
 
-if ($_POST['-']=='-'){
-
-	$_SESSION['sign'] = '-';
-	$_SESSION['is_opt']==$_POST['-'];
-
-	$_SESSION['is_opt'] = TRUE;
-
-	$session_number = $_SESSION['old_number'] =  $_POST['number'];
-}
-
-if ($_POST['-']=='-'){
-
-	$_SESSION['sign'] = '-';
-	$_SESSION['is_opt']==$_POST['-'];
-
-	$_SESSION['is_opt'] = TRUE;
-
-	$session_number = $_SESSION['old_number'] =  $_POST['number'];
-}
 
 if ($_POST['*']=='*'){
 
+	if($_SESSION['is_opt']==FALSE){
+		$_SESSION['number'] = $_SESSION['old_number'] * $_SESSION['number'];
+	}
+
 	$_SESSION['sign'] = '*';
-	$_SESSION['is_opt']==$_POST['*'];
-
 	$_SESSION['is_opt'] = TRUE;
-
 	$session_number = $_SESSION['old_number'] =  $_POST['number'];
 }
 
 if ($_POST['/']=='/'){
 
+	if($_SESSION['is_opt']==FALSE){
+		$_SESSION['number'] = $_SESSION['old_number'] / $_SESSION['number'];
+	}
+
 	$_SESSION['sign'] = '/';
-	$_SESSION['is_opt']==$_POST['/'];
-
 	$_SESSION['is_opt'] = TRUE;
-
 	$session_number = $_SESSION['old_number'] =  $_POST['number'];
 }
 

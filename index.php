@@ -52,7 +52,7 @@
 
 	  <form  method = "post" action="index_session.php" >
 	  <div class="jumbotron"><h1 class="display-4">
-	  <?php echo $_SESSION['number']."".$_SESSION['plus'];?> </h1></div>
+	  <?php echo $_SESSION['number'];?> </h1></div>
 	  <div class="btn-group-wrapper">
       <div class="btn-group" role="group" aria-label="Basic example">
         <button type="submit" class="btn btn-secondary opt-btn" name="AC" value="AC">AC</button>
