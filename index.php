@@ -49,10 +49,35 @@
     }
   </style>
   <body>
-  <?php echo "NUMBER:".$_SESSION['number']."   Old number :". $_SESSION['old_number']."  sign :".$_SESSION['sign'];?>
+  <?php 
+
+
+  if(isset($_SESSION['number'])){
+   $number =  $_SESSION['number'];
+  }
+  else {
+    $number = 'EMPTY';
+  }
+  if(isset($_SESSION['old_number'])){
+    $old_number = $_SESSION['old_number'];
+  }
+  else{
+    $old_number = 'EMPTY';
+  }
+  if(isset($_SESSION['sign'])){
+    $sign = $_SESSION['sign'];
+  }else{
+    $sign = 'EMPTY';
+  }
+
+  
+
+  echo "NUMBER:".$number."<br>Old number :". $old_number."<br>sign :".$sign;
+  
+  ?>
 	  <form  method = "post" action="index_session.php" >
-	  <div class="jumbotron"><h1 class="display-4">
-	  <?php echo $_SESSION['number'];?> </h1></div>
+	  <div class="jumbotron"><h1 class="display-4 text-right mx-4 my-1">
+	  <?php echo $number?> </h1></div>
 	  <div class="btn-group-wrapper">
       <div class="btn-group" role="group" aria-label="Basic example">
         <button type="submit" class="btn btn-secondary opt-btn" name="AC" value="AC">AC</button>
