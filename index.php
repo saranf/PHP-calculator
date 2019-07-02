@@ -49,7 +49,7 @@
     }
   </style>
   <body>
-
+  <?php echo "NUMBER:".$_SESSION['number']."   Old number :". $_SESSION['old_number']."  sign :".$_SESSION['sign'];?>
 	  <form  method = "post" action="index_session.php" >
 	  <div class="jumbotron"><h1 class="display-4">
 	  <?php echo $_SESSION['number'];?> </h1></div>
@@ -57,7 +57,7 @@
       <div class="btn-group" role="group" aria-label="Basic example">
         <button type="submit" class="btn btn-secondary opt-btn" name="AC" value="AC">AC</button>
         <button type="submit" class="btn btn-secondary opt-btn" name="eraser" value="eraser">◀ </button>
-        <button type="submit" class="btn btn-secondary opt-btn" name="parsent" >%</button>
+        <button type="submit" class="btn btn-secondary opt-btn" name="%" value='%' >%</button>
         <button type="submit" class="btn btn-secondary opt-btn" name="/" value="/">/</button>
       </div>
       <div class="btn-group" role="group" aria-label="Basic example">
