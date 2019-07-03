@@ -53,6 +53,7 @@ if ($_POST['+']=='+'){
 		$_SESSION['sign'] ='+';
 		$_SESSION['is_opt'] = TRUE;
 		$session_number = $_SESSION['old_number'] =  $_POST['number'];
+
 	}
 
 
