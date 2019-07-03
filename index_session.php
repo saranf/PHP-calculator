@@ -148,13 +148,31 @@ header('location:./index.php');
 
 
 function func_plus($num1, $num2){
-	return $num1 + $num2;
+	$result =  $num1 + $num2;
+
+	if(strlen($result)>5){
+		$result = 99999;
+	}
+
+	return $result;
 }
 function func_minux($num1, $num2){
-	return $num1-$num2;
+	$result =  $num1 - $num2;
+
+	if(strlen($result)>5){
+		$result = 99999;
+	}
+
+	return $result;
 }
 function func_multi($num1, $num2){
-	return $num1*$num2;
+	$result =  $num1 * $num2;
+
+	if(strlen($result)>5){
+		$result = 99999;
+	}
+
+	return $result;
 }
 function func_div($num1, $num2){
 	return $num1/$num2;
