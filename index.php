@@ -42,7 +42,7 @@
         font-size: 8vh;
     }
     .btn.zero-btn{
-        width: 50vw;
+        width: 75vw;
     }
     .btn.opt-btn{
         background-color: orange;
@@ -105,7 +105,6 @@
       </div>
       <div class="btn-group" role="group" aria-label="Basic example">
         <button type="submit" class="btn btn-secondary zero-btn"name="number[]" value=0>0</button>
-        <button type="submit" class="btn btn-secondary"name="." value=.>.</button>
         <button type="submit" class="btn btn-secondary opt-btn"name="=" value='='>=</button>
       </div>
     </div>
