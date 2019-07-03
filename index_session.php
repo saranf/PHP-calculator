@@ -32,6 +32,9 @@ if (isset($_SESSION['number'])){ //number 문자가 들어올 경우에
 	}
 	else{
 		header('location:./index.php');
+		$_SESSION['number'] = 99999;
+		$_SESSION['old_number'] = null;
+		$_SESSION['sign'] = null;
 	}
 }
 
@@ -109,27 +112,27 @@ if ($_POST['%']=='%'){
 
 if( $_POST["="] == '='){
 	if($_SESSION['sign'] =='+'){
-		$_SESSION['number'] = $_SESSION['old_number'] + $_SESSION['number'];
+		$_SESSION['number'] =func_plus($_SESSION['old_number'] , $_SESSION['number']) ;
 		$_SESSION['sign'] = null;  // 연산자 초기화
 		$_SESSION['old_number']=null;
 	}
 	if($_SESSION['sign'] == '-'){
-		$_SESSION['number'] = $_SESSION['old_number'] - $_SESSION['number'];
+		$_SESSION['number'] = func_minux($_SESSION['old_number'], $_SESSION['number']);
 		$_SESSION['sign'] = null;  // 연산자 초기화
 		$_SESSION['old_number']=null;
 	}
 	if($_SESSION['sign'] == '*'){
-		$_SESSION['number'] = $_SESSION['old_number'] * $_SESSION['number'];
+		$_SESSION['number'] = func_multi($_SESSION['old_number'], $_SESSION['number']);
 		$_SESSION['sign'] = null;  // 연산자 초기화
 		$_SESSION['old_number']=null;
 	}
 	if($_SESSION['sign'] == '/'){
-		$_SESSION['number'] = $_SESSION['old_number'] / $_SESSION['number'];
+		$_SESSION['number'] = func_div($_SESSION['old_number'], $_SESSION['number']);
 		$_SESSION['sign'] = null;  // 연산자 초기화
 		$_SESSION['old_number']=null;
 	}
 	if($_SESSION['sign'] == '%'){
-		$_SESSION['number'] = $_SESSION['old_number'] % $_SESSION['number'];
+		$_SESSION['number'] = func_parsent($_SESSION['old_number'] , $_SESSION['number']);
 		$_SESSION['sign'] = null;  // 연산자 초기화
 		$_SESSION['old_number']=null;
 	}
