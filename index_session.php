@@ -84,21 +84,25 @@ if ($_POST['*']=='*'){
 }
 
 if ($_POST['/']=='/'){
-//	if($_SESSION['is_opt']==FALSE){
-//		$_SESSION['number'] = $_SESSION['old_number'] / $_SESSION['number'];
-//	}
-	$_SESSION['sign'] = '/';
-	$_SESSION['is_opt'] = TRUE;
-	$session_number = $_SESSION['old_number'] =  $_POST['number'];
+	if(isset($_SESSION['sign'])){//부호가 활성화 되면
+		$_SESSION['number'] = func_div($_SESSION['old_number'], $_SESSION['number']); // 더하기를 하고 number에 넣는다.
+		$_SESSION['old_number'] = null;
+	}else{
+		$_SESSION['sign'] ='/';
+		$_SESSION['is_opt'] = TRUE;
+		$session_number = $_SESSION['old_number'] =  $_POST['number'];
+	}
 }
 
 if ($_POST['%']=='%'){
-//	if($_SESSION['is_opt']==FALSE){
-//		$_SESSION['number'] = $_SESSION['old_number'] % $_SESSION['number'];
-//	}
-	$_SESSION['sign'] = '%';
-	$_SESSION['is_opt'] = TRUE;
-	$session_number = $_SESSION['old_number'] =  $_POST['number'];
+	if(isset($_SESSION['sign'])){//부호가 활성화 되면
+		$_SESSION['number'] = func_parsent($_SESSION['old_number'], $_SESSION['number']); // 더하기를 하고 number에 넣는다.
+		$_SESSION['old_number'] = null;
+	}else{
+		$_SESSION['sign'] ='%';
+		$_SESSION['is_opt'] = TRUE;
+		$session_number = $_SESSION['old_number'] =  $_POST['number'];
+	}
 }
 
 
